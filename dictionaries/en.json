@@ -13,13 +13,36 @@
         "headlineTwo": "Links?"
      },
      "summary": {
-        "title": "How to avoid .zip phishing"
+        "title": "How to avoid .zip phishing",
+        "first": {
+            "title":"Look out for @ signs",
+            "description": "Check if there is an @ sign in front of the .zip portion of the link."
+        },
+        "second": {
+            "title":"Hover over Links",
+            "description": "Browsers display where a link leads in the lower left corner. "
+        },
+        "third": {
+            "title":"E-Mails require additional care",
+            "description": "E-Mails enable attackers to use a wide array of styling options. Attackers can change the font size of the @ sign and make it incredibly small. This results in an invisible @."
+        },
+        "fourth": {
+            "title":"Know your slashes",
+            "description": "To craft a bad link, scammers need to use unicode characters U+2044 ⁄ and U+2215 ∕ in the link. They look slightly different to the correct slash /."
+        }
        },
        "test": {
-        "title": "Test a link"
+        "title": "Test a link",
+        "description": "Feel free to check a link by entering it below",
+        "placeholder": "Paste your link here..."
        },
        "about": {
-        "title": "Made with ❤️"
+        "title": "Made with ❤️",
+        "firstParagraph": "Share this page. Tell your parents and friends. Bad files on your PC are bad times.",
+        "secondParagraph": "This page doesn’t track you. There are no ads. The source code is ",
+        "thirdParagraph": "Had a good time?",
+        "github": "open source.",
+        "kofi": "Consider buying me a coffee ☕"
        },
        "sources": {
         "title": "Further  readings & sources"
