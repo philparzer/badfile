@@ -3,6 +3,13 @@
         "title": "New .zip domains trick people into downloading malicious files"
     },
     "hero": {
-        "title": "Watch Out!"
+        "title": "Watch Out!",
+        "opener": "New .zip domains trick people into downloading malicious files"
+     },
+     "linkGame": {
+        "good": "good",
+        "bad": "bad",
+        "headlineOne": "Can you spot",
+        "headlineTwo": "Links?"
      }
   }

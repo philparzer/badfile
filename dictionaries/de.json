@@ -3,6 +3,13 @@
     "title": "Neue .zip Domains führen dazu, bösartige Files runterzuladen"
  },
  "hero": {
-    "title": "Pass Auf!"
- }
+    "title": "Pass Auf!",
+    "opener": "Neue .zip Domains lassen dich versehentlich bösartige Files runterladen"
+ },
+ "linkGame": {
+   "good": "guter",
+   "bad": "böser",
+   "headlineOne": "Findest du die",
+   "headlineTwo": "Links?"
+}
 }
