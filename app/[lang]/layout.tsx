@@ -1,8 +1,26 @@
-import { getDictionary } from "@/get-dictionary";
-import LocaleSwitcher from "./components/LocaleSwitcher";
 import "./globals.css";
 import { Bungee, Atkinson_Hyperlegible } from "next/font/google";
+import { Metadata, ResolvingMetadata } from "next";
 import { Locale } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
+
+type Props = {
+  params: {lang: Locale};
+};
+ 
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  // read route params
+  const lang = params.lang;
+  
+  const description = await getDictionary(lang).then((dictionary) => dictionary.meta.description);
+ 
+  return {
+    title: "BADFILE.ZIP",
+    description: description,
+  };
+}
 
 const bungee = Bungee({
   subsets: ["latin"],
@@ -23,7 +41,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bungee.variable} ${atkinson.variable} font-sans`}
+      className={`${bungee.variable} ${atkinson.variable} font-sans selection:bg-red-500 selection:text-white bg-[#E8E8E8]`}
     >
       <body className="font-atkinson">{children}</body>
     </html>

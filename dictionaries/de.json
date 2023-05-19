@@ -1,15 +1,27 @@
 {
- "meta": {
-    "title": "Neue .zip Domains führen dazu, bösartige Files runterzuladen"
- },
- "hero": {
+  "meta": {
+    "description": "Neue .zip Domains führen dazu, bösartige Files runterzuladen"
+  },
+  "hero": {
     "title": "Pass Auf!",
     "opener": "Neue .zip Domains lassen dich versehentlich bösartige Files runterladen"
- },
- "linkGame": {
-   "good": "guter",
-   "bad": "böser",
-   "headlineOne": "Findest du die",
-   "headlineTwo": "Links?"
-}
+  },
+  "linkGame": {
+    "good": "gut",
+    "bad": "böse",
+    "headlineOne": "Findest du die",
+    "headlineTwo": "Links?"
+  },
+  "summary": {
+   "title": "So umgeht man .zip Phishing"
+  },
+  "test": {
+   "title": "Teste einen Link"
+  },
+  "about": {
+   "title": "Made with ❤️"
+  },
+  "sources": {
+   "title": "Mehr Infos und Quellen"
+  }
 }

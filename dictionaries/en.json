@@ -1,6 +1,6 @@
 {
     "meta": {
-        "title": "New .zip domains trick people into downloading malicious files"
+        "description": "New .zip domains trick people into downloading malicious files"
     },
     "hero": {
         "title": "Watch Out!",
@@ -11,5 +11,17 @@
         "bad": "bad",
         "headlineOne": "Can you spot",
         "headlineTwo": "Links?"
-     }
+     },
+     "summary": {
+        "title": "How to avoid .zip phishing"
+       },
+       "test": {
+        "title": "Test a link"
+       },
+       "about": {
+        "title": "Made with ❤️"
+       },
+       "sources": {
+        "title": "Further  readings & sources"
+       }
   }
