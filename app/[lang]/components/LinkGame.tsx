@@ -123,7 +123,7 @@ export default function LinkGame({dictionary}: Props) {
               </div>
               <div className="flex gap-5 mt-8 items-center">
               <button className="bg-white rounded-lg border-black flex gap-2 items-center px-2 py-1  hover:border-green-500 border-2" onClick={() => nextLink(true)}>{dictionary.good}<Image src="/images/check.png"  height={20} width={20} alt="green checkmark emoji" /></button>
-              <button className="bg-white border-2 rounded-lg border-black flex gap-2 items-center px-2 py-1  hover:border-red-500" onClick={() => nextLink(false)}>{dictionary.bad}</button>
+              <button className="bg-white border-2 rounded-lg border-black flex gap-2 items-center px-2 py-1  hover:border-red-500" onClick={() => nextLink(false)}>{dictionary.bad}<Image src="/images/cross.png"  height={20} width={20} alt="red cross emoji" /></button>
               <div>
               {round !== 10 ? 
               <>
