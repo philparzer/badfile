@@ -41,7 +41,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`${bungee.variable} ${atkinson.variable} font-sans selection:bg-red-500 selection:text-white bg-[#E8E8E8]`}
+      className={`${bungee.variable} ${atkinson.variable} font-sans selection:bg-red-500 selection:text-white bg-[#EEEEEE]`}
     >
       <body className="font-atkinson">{children}</body>
     </html>
