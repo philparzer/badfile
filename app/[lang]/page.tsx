@@ -69,8 +69,8 @@ export default async function IndexPage({
 
             </div>
           </section>
-          <section className="flex flex-col 4">
-            <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.test.title}</h2>
+          <section className="flex flex-col">
+            <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-2">{dictionary.test.title}</h2>
             <p>{dictionary.test.description}</p>
             <div className="mt-4 -translate-x-2">
             <LinkTest dictionary={dictionary.test}/>
