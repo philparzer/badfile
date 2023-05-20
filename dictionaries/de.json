@@ -10,41 +10,45 @@
     "good": "gut",
     "bad": "böse",
     "headlineOne": "Findest du die",
-    "headlineTwo": "Links?"
+    "headlineTwo": "Links?",
+    "badResult": "Du solltest unten nochmal nachlesen",
+    "goodResult": "Gut gemacht!",
+    "correct": "richtig",
+    "retry": "nochmal"
   },
   "summary": {
-   "title": "So umgeht man .zip Phishing",
-   "first": {
-      "title":"Halte Ausschau nach @ Zeichen",
+    "title": "So umgeht man .zip Phishing",
+    "first": {
+      "title": "Halte Ausschau nach @ Zeichen",
       "description": "Achte darauf, ob ein @ Zeichen kurz vor dem .zip steht."
-  },
-  "second": {
-      "title":"Hover over Links",
+    },
+    "second": {
+      "title": "Hover over Links",
       "description": "Browsers display where a link leads in the lower left corner. "
-  },
-  "third": {
-      "title":"E-Mails require additional care",
+    },
+    "third": {
+      "title": "E-Mails require additional care",
       "description": "E-Mails enable attackers to use a wide array of styling options. Attackers can change the font size of the @ sign and make it incredibly small. This results in an invisible @."
-  },
-  "fourth": {
-      "title":"Know your slashes",
+    },
+    "fourth": {
+      "title": "Know your slashes",
       "description": "To craft a bad link, scammers need to use unicode characters U+2044 ⁄ and U+2215 ∕ in the link. They look slightly different to the correct slash /."
-  }
+    }
   },
   "test": {
-   "title": "Teste einen Link",
-   "description": "Hier kannst du einen Link testen, gib ihn einfach unten ein",
-   "placeholder": "Füge hier einen Link ein..."
+    "title": "Teste einen Link",
+    "description": "Hier kannst du einen Link testen, gib ihn einfach unten ein",
+    "placeholder": "Füge hier einen Link ein..."
   },
   "about": {
-   "title": "Made with ❤️",
-   "firstParagraph": "Share this page. Tell your parents and friends. Bad files on your PC are bad times.",
-   "secondParagraph": "This page doesn’t track you. There are no ads. The source code is open source. ",
-   "thirdParagraph": "Had a good time?",
-   "github": "open source.",
-   "kofi": "Consider buying me a coffee ☕"
+    "title": "Made with ❤️",
+    "firstParagraph": "Share this page. Tell your parents and friends. Bad files on your PC are bad times.",
+    "secondParagraph": "This page doesn’t track you. There are no ads. The source code is open source. ",
+    "thirdParagraph": "Had a good time?",
+    "github": "open source.",
+    "kofi": "Consider buying me a coffee ☕"
   },
   "sources": {
-   "title": "Mehr Infos und Quellen"
+    "title": "Mehr Infos und Quellen"
   }
 }

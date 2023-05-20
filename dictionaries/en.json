@@ -10,7 +10,11 @@
         "good": "good",
         "bad": "bad",
         "headlineOne": "Can you spot",
-        "headlineTwo": "Links?"
+        "headlineTwo": "Links?",
+        "badResult": "You should read up below",
+        "goodResult": "Good Job!",
+        "correct": "correct",
+        "retry": "retry"
      },
      "summary": {
         "title": "How to avoid .zip phishing",
