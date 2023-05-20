@@ -38,7 +38,10 @@
        "test": {
         "title": "Test a link",
         "description": "Feel free to check a link by entering it below",
-        "placeholder": "Paste your link here..."
+        "placeholder": "Paste your link here...",
+        "safeLink": "safe",
+    "unsafeLink": "unsafe",
+    "invalidLink": "invalid link"
        },
        "about": {
         "title": "Made with ❤️",

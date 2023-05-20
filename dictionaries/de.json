@@ -38,7 +38,10 @@
   "test": {
     "title": "Teste einen Link",
     "description": "Hier kannst du einen Link testen, gib ihn einfach unten ein",
-    "placeholder": "Füge hier einen Link ein..."
+    "placeholder": "Füge hier einen Link ein...",
+    "safeLink": "Sicher",
+    "unsafeLink": "Unsicher",
+    "invalidLink": "falsches Format"
   },
   "about": {
     "title": "Made with ❤️",

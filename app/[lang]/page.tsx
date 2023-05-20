@@ -3,6 +3,7 @@ import { Locale } from "@/i18n-config";
 import LocaleSwitcher from "./components/LocaleSwitcher";
 import LinkGame from "./components/LinkGame";
 import Image from "next/image";
+import LinkTest from "./components/LinkTest";
 
 export default async function IndexPage({
   params: { lang },
@@ -68,10 +69,12 @@ export default async function IndexPage({
 
             </div>
           </section>
-          <section>
+          <section className="flex flex-col 4">
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.test.title}</h2>
             <p>{dictionary.test.description}</p>
-            <input className="rounded-full border-2 border-black border-opacity-50 text-lg px-4 py-1 w-[50%]" placeholder={dictionary.test.placeholder}></input>
+            <div className="mt-4 -translate-x-2">
+            <LinkTest dictionary={dictionary.test}/>
+            </div>
           </section>
           <section>
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.about.title}</h2>
