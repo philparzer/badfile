@@ -18,7 +18,7 @@ export default async function IndexPage({
         <LocaleSwitcher lang={lang} />
       </nav>
       <div className="flex flex-col mx-[5%] items-center">
-        <main className="flex flex-col gap-[260px] mx-[5%] w-full max-w-[973px] mb-[400px]">
+        <main className="flex flex-col gap-[200px] mx-[5%] w-full max-w-[973px] mb-[400px]">
           <section className="mt-[20vh] flex justify-between items-center">
             <div>
               <h4 className="font-bungee flex items-center -translate-x-3 select-none">
@@ -38,33 +38,43 @@ export default async function IndexPage({
             </div>
             <LinkGame dictionary={dictionary.linkGame}/>
           </section>
-          <section>
+          <section className="mt-10">
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.summary.title}</h2>
-            <div className="grid grid-cols-2 grid-rows-4 mt-10 min-h-[50vh] gap-4">
-              <div className="bg-white rounded-xl p-6 pb-10 relative">
-                <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">1</p>
-                <h3 className="font-bold tracking-wider">{dictionary.summary.first.title}</h3>
+            <div className="grid grid-cols-2 mt-10 gap-4">
+              <div className="bg-white rounded-xl p-10 relative">
+                <p className="absolute -left-2 top-8 font-bungee text-4xl text-red-500">1</p>
+                <h3 className="font-bold tracking-wider text-lg mb-2">{dictionary.summary.first.title}</h3>
                 <p>{dictionary.summary.first.description}</p>
-              </div>
-              <div className="row-span-2 bg-white rounded-xl p-6 pb-10 relative">
-              <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">2</p>
-                <h3 className="font-bold tracking-wider">{dictionary.summary.second.title}</h3>
-                <p>{dictionary.summary.second.description}</p>
-                <video src="/images/hover.webm" className="" autoPlay muted loop></video>
-              </div>
-              <div className="row-span-3 bg-white rounded-xl p-6 pb-10 relative">
-              <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">3</p>
-                <h3 className="font-bold tracking-wider">{dictionary.summary.third.title}</h3>
-                <p>{dictionary.summary.third.description}</p>
-                <div className="relative h-[300px]">
-                <Image src="/images/mail.jpg" alt="test" className="object-contain" fill/>
+                <div className="relative h-[20px] mt-4">
+                <p className="select-none flex gap-[0.5px]">https://dropbox.com/<span className="text-xl w-5 flex justify-center items-center leading-[1em] border border-red-500">@</span>badfile.zip</p>
                 </div>
               </div>
-              <div className="row-span-2 bg-white rounded-xl p-6 pb-10 relative">
-              <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">4</p>
-                <h3 className="font-bold tracking-wider">{dictionary.summary.fourth.title}</h3>
-                <p>{dictionary.summary.fourth.description}</p>
-                
+              <div className="row-span-2 bg-white rounded-xl p-10  relative">
+              <p className="absolute -left-2 top-8 font-bungee text-4xl text-red-500">2</p>
+                <h3 className="font-bold tracking-wider text-lg mb-2">{dictionary.summary.second.title}</h3>
+                <p>{dictionary.summary.second.description}</p>
+                <video src="/images/hover.webm" className="mt-4" autoPlay muted loop></video>
+              </div>
+              <div className="row-span-3 bg-white rounded-xl p-10  relative">
+              <p className="absolute -left-2 top-8 font-bungee text-4xl text-red-500">3</p>
+                <h3 className="font-bold tracking-wider text-lg mb-2">{dictionary.summary.third.title}</h3>
+                <p>{dictionary.summary.third.description}</p>
+                <div className="relative h-[200px] mt-4">
+                <Image src="/images/mail.jpg" alt="e-mail client screenshot, e-mail with link, where @ sign is not visible" className="object-contain" fill/>
+                </div>
+              </div>
+              <div className="row-span-2 bg-white rounded-xl p-10  relative">
+              <p className="absolute -left-2 top-8 font-bungee text-4xl text-red-500">4</p>
+                <h3 className="font-bold tracking-wider text-lg mb-2">{dictionary.summary.fourth.title}</h3>
+                <div className="flex flex-col gap-4">
+                <p>{dictionary.summary.fourth.paragraphOne}</p>
+                <p>{dictionary.summary.fourth.paragraphTwo}</p>
+                <div className="flex gap-2">
+                  <p className="text-xl w-4 flex justify-center items-center leading-[1em] border border-red-500">∕</p>
+                  <p className="text-xl w-4 flex justify-center items-center leading-[1em] border border-red-500">⁄</p>
+                  <p className="text-xl w-4 flex justify-center items-center leading-[1em] border border-green-500">/</p>
+                </div>
+                </div>
               </div>
 
             </div>
@@ -76,15 +86,30 @@ export default async function IndexPage({
             <LinkTest dictionary={dictionary.test}/>
             </div>
           </section>
-          <section>
+          <section className="max-w-[350px] ">
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.about.title}</h2>
+            <div className="flex flex-col gap-4">
             <p>{dictionary.about.firstParagraph}</p>
             <p>{dictionary.about.secondParagraph}<a className="underline" href="https://github.com/philparzer/badfile" target="_blank" rel="noopener noreferrer">{dictionary.about.github}</a></p>
             <p>{dictionary.about.thirdParagraph} <a className="underline" href="https://ko-fi.com/philparzer" target="_blank" rel="noopener noreferrer">{dictionary.about.kofi}</a></p>
+            </div>
           </section>
           <section>
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.sources.title}</h2>
-            <a className="underline" href="https://ko-fi.com/philparzer" target="_blank" rel="noopener noreferrer">The dangers of Google’s .zip TLD</a>
+            <div className="flex flex-col gap-2">
+              <div>
+            <a className="underline" href="https://medium.com/@bobbyrsec/the-dangers-of-googles-zip-tld-5e1e675e59a5" target="_blank" rel="noopener noreferrer">The dangers of Google’s .zip TLD</a>
+            </div>
+            <div>
+            <a className="underline flex" href="https://en.wikipedia.org/wiki/Zip_bomb" target="_blank" rel="noopener noreferrer">Zip Bombs</a>
+            </div>
+            <div>
+            <a className="underline flex" href="https://en.wikipedia.org/wiki/Supply_chain_attack" target="_blank" rel="noopener noreferrer">Supply Chain Attacks</a>
+            </div>
+            <div>
+            <a className="underline flex" href="https://en.wikipedia.org/wiki/Watering_hole_attack" target="_blank" rel="noopener noreferrer">Watering Hole Attacks</a>
+            </div>
+            </div>
           </section>
         </main>
       </div>

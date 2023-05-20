@@ -32,8 +32,9 @@
         },
         "fourth": {
             "title":"Know your slashes",
-            "description": "To craft a bad link, scammers need to use unicode characters U+2044 ⁄ and U+2215 ∕ in the link. They look slightly different to the correct slash /."
-        }
+            "paragraphOne": "To craft a bad link, scammers need to use unicode characters U+2044 ⁄ and U+2215 ∕ in the link. They look slightly different to the correct slash /.",
+            "paragraphTwo": "The correct slash is slightly longer and has a different angle. The bad slash is shorter and has a steeper angle.",
+            "paragraphThree": "The correct slash is slightly longer and has a different angle. The bad slash is shorter and has a steeper angle."              }
        },
        "test": {
         "title": "Test a link",
@@ -46,7 +47,7 @@
        "about": {
         "title": "Made with ❤️ on a cozy weekend",
         "firstParagraph": "Share this page. Tell your parents and friends. Bad files on your PC are bad times.",
-        "secondParagraph": "This page doesn’t track you. There are no ads. The source code is ",
+        "secondParagraph": "This page doesn’t track you. There are no ads. This website is ",
         "thirdParagraph": "Had a good time?",
         "github": "open source.",
         "kofi": "Consider buying me a coffee ☕"
