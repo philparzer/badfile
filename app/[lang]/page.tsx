@@ -2,6 +2,7 @@ import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 import LocaleSwitcher from "./components/LocaleSwitcher";
 import LinkGame from "./components/LinkGame";
+import Image from "next/image";
 
 export default async function IndexPage({
   params: { lang },
@@ -48,16 +49,21 @@ export default async function IndexPage({
               <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">2</p>
                 <h3 className="font-bold tracking-wider">{dictionary.summary.second.title}</h3>
                 <p>{dictionary.summary.second.description}</p>
+                <video src="/images/hover.webm" className="" autoPlay muted loop></video>
               </div>
               <div className="row-span-3 bg-white rounded-xl p-6 pb-10 relative">
               <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">3</p>
                 <h3 className="font-bold tracking-wider">{dictionary.summary.third.title}</h3>
                 <p>{dictionary.summary.third.description}</p>
+                <div className="relative h-[300px]">
+                <Image src="/images/mail.jpg" alt="test" className="object-contain" fill/>
+                </div>
               </div>
               <div className="row-span-2 bg-white rounded-xl p-6 pb-10 relative">
               <p className="absolute -left-2 top-4 font-bungee text-4xl text-red-500">4</p>
                 <h3 className="font-bold tracking-wider">{dictionary.summary.fourth.title}</h3>
                 <p>{dictionary.summary.fourth.description}</p>
+                
               </div>
 
             </div>
