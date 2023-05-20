@@ -18,10 +18,10 @@ export default async function IndexPage({
         <LocaleSwitcher lang={lang} />
       </nav>
       <div className="flex flex-col mx-[5%] items-center">
-        <main className="flex flex-col gap-[200px] mx-[5%] w-full max-w-[973px] mb-[400px]">
-          <section className="mt-[20vh] flex justify-between items-center">
+        <main className="flex flex-col gap-[120px] lg:gap-[200px] mx-[5%] w-full max-w-[973px] mb-[200px] lg:mb-[400px]">
+          <section className="mt-[100px] lg:mt-[20vh] flex lg:flex-row flex-col lg:justify-between lg:items-center">
             <div>
-              <h4 className="font-bungee flex items-center -translate-x-3 select-none">
+              <h4 className="font-bungee flex items-center -translate-x-3 select-none ">
                 <span className="flex flex-col text-lg leading-[0.8em] -translate-y-0.5 text-red-500">
                   <span>B</span>
                   <span>A</span>
@@ -38,9 +38,9 @@ export default async function IndexPage({
             </div>
             <LinkGame dictionary={dictionary.linkGame}/>
           </section>
-          <section className="mt-10">
+          <section className="mt-10 ">
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.summary.title}</h2>
-            <div className="grid grid-cols-2 mt-6 gap-4">
+            <div className="flex flex-col lg:grid lg:grid-cols-2 mt-6 gap-4">
               <div className="bg-white rounded-xl p-10 relative">
                 <p className="absolute -left-2 top-8 font-bungee text-4xl text-red-500">1</p>
                 <h3 className="font-bold tracking-wider text-lg mb-2">{dictionary.summary.first.title}</h3>
@@ -86,7 +86,7 @@ export default async function IndexPage({
             <LinkTest dictionary={dictionary.test}/>
             </div>
           </section>
-          <section className="max-w-[380px] ">
+          <section className="max-w-[380px]">
             <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-4">{dictionary.about.title}</h2>
             <div className="flex flex-col gap-4">
             <p>{dictionary.about.firstParagraph}</p>
