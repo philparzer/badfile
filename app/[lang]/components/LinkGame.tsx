@@ -101,7 +101,7 @@ export default function LinkGame({dictionary}: Props) {
     }
 
     return (
-        <div className=" flex flex-col lg:items-end mt-20 lg:mt-0">
+        <div className=" flex flex-col lg:items-end mt-32 lg:mt-0">
           <div className="w-[350px]">
             <div className="h-[150px]">
               <h2 className="font-bold flex items-center gap-2 text-2xl tracking-wider mb-5 ">

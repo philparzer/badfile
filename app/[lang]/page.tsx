@@ -14,7 +14,7 @@ export default async function IndexPage({
 
   return (
     <>
-      <nav className="sticky top-0 flex justify-end px-[3%] pt-[20px]">
+      <nav className="z-10 sticky top-0 flex justify-end px-[3%] pt-[20px]">
         <LocaleSwitcher lang={lang} />
       </nav>
       <div className="flex flex-col mx-[5%] items-center">
