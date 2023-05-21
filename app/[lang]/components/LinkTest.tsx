@@ -42,7 +42,7 @@ export default function LinkTest ({dictionary}: Props) {
             <input 
                 value={value}
                 onChange={handleInputChange}
-                className={`rounded-full ${!isValidLink ? "border-black" : isZipDomain ? "border-red-500 focus:outline-red-500" : "border-green-500 focus:outline-green-500"} border-2 border-opacity-50 px-4 py-1 w-[50%] `}
+                className={`rounded-full ${!isValidLink ? "border-black" : isZipDomain ? "border-red-500 focus:outline-red-500" : "border-green-500 focus:outline-green-500"} border-2 border-opacity-50 px-4 py-1 w-full lg:w-[50%] `}
                 placeholder={dictionary.placeholder}
             />
             <div>{isValidLink === undefined ? <></> : isValidLink === false ? <div className="text-sm opacity-50">{dictionary.invalidLink}</div> : !isZipDomain ? <div className="flex gap-1 items-center"><Image src="/images/check.png"  height={20} width={20} alt="green checkmark emoji" /> {dictionary.safeLink}</div> : <div className="flex gap-1 items-center"><Image src="/images/cross.png"  height={20} width={20} alt="red cross emoji"  />{dictionary.unsafeLink}</div>}</div>
