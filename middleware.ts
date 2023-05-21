@@ -7,6 +7,8 @@ import { match as matchLocale } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
 function getLocale(request: NextRequest): string | undefined {
+
+  try {
   // Negotiator expects plain object so we need to transform headers
   const negotiatorHeaders: Record<string, string> = {}
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
@@ -16,6 +18,11 @@ function getLocale(request: NextRequest): string | undefined {
   // @ts-ignore locales are readonly
   const locales: string[] = i18n.locales
   return matchLocale(languages, locales, i18n.defaultLocale)
+  } catch (error) {
+    console.log(error)
+    return i18n.defaultLocale
+  }
+
 }
 
 export function middleware(request: NextRequest) {
